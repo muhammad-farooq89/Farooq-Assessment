@@ -328,3 +328,140 @@ body {
     padding: 8px 16px;
   }
 }
+
+.heatmap-container {
+  display: flex;
+  gap: 20px;
+
+  .heatmap,
+  .most-days-container,
+  .profile-container {
+    flex: 1;
+  }
+
+  @media (min-width: 400px) and (max-width: 1200px) {
+    flex-direction: column;
+    align-items: center;
+
+    .heatmap,
+    .most-days-container {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.heatmap-days {
+  display: flex;
+
+  @media (min-width: 300px) and (max-width: 800px) {
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+
+    button {
+      scroll-snap-align: center;
+    }
+  }
+}
+
+.leave-types {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 1000px) {
+    flex-direction: row;
+  }
+
+  @media (min-width: 300px) and (max-width: 487px) {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+.heatmap-header,
+.most-days-header {
+  @media (min-width: 300px) and (max-width: 800px) {
+    text-align: center;
+  }
+}
+
+.user-info img {
+  @media (min-width: 300px) and (max-width: 800px) {
+    width: 30px;
+  }
+}
+
+.profile-container {
+  @media (min-width: 300px) and (max-width: 800px) {
+    display: none;
+  }
+}
+
+.total {
+  @media (min-width: 300px) and (max-width: 800px) {
+    font-size: 14px;
+  }
+}
+
+.table-container {
+  @media (min-width: 300px) and (max-width: 1200px) {
+    overflow-x: scroll;
+
+    table {
+      width: 100%;
+    }
+
+    th, td {
+      min-width: 167px;
+    }
+  }
+}
+
+.tabs {
+  @media (min-width: 300px) and (max-width: 800px) {
+    overflow-x: scroll;
+  }
+}
+
+.search {
+  input {
+    @media (max-width: 780px) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 780px) {
+    width: auto;
+  }
+}
+
+.top-right {
+  @media (max-width: 780px) {
+    display: flex;
+    align-items: right;
+  }
+}
+
+.notifications .icon,
+.notification-icon,
+.profile img {
+  @media (max-width: 780px) {
+    width: auto;
+  }
+}
+
+.top-bar {
+  @media (max-width: 780px) {
+    padding: 16px;
+  }
+}
+
+.top-bar-union,
+.toggle-btn {
+  @media (max-width: 780px) {
+    margin-top: 5px;
+    width: 30px;
+    height: 30px;
+  }
+}
